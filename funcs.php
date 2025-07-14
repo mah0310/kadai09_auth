@@ -7,10 +7,10 @@ function h($str){
 //DB接続関数：db_conn()
 function db_conn(){
     try {
-        //localhostの場合
+        //localhostの場合　＊config.phpはconfig_sample.phpを参考に個人で作成してください。
         require_once(__DIR__. "/config.php");
 
-        //localhost以外＊＊自分で書き直してください！！＊＊
+        //localhost以外　＊config_server.phpはconfig_sample.phpを参考に個人で作成してください。
         if($_SERVER["HTTP_HOST"] != 'localhost'){
             require_once(__DIR__. "/config_server.php");
             }
